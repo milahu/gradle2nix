@@ -8,6 +8,14 @@ plugins {
 group = "org.nixos.gradle2nix"
 version = property("VERSION") ?: "unspecified"
 
+allprojects {
+    repositories {
+        mavenCentral()
+        maven { url = uri("https://repo.gradle.org/gradle/libs-releases") }
+        //maven { url = uri("https://plugins.gradle.org/m2/") }
+    }
+}
+
 subprojects {
     group = rootProject.group
     version = rootProject.version
