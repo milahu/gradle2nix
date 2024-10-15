@@ -1,9 +1,9 @@
 [versions]
-gradle = "8.8"
+gradle = "8.10"
 junit = "5.8.2"
 # Intentionally using the version embedded in Gradle to reduce dependency count
 # See https://docs.gradle.org/current/userguide/compatibility.html#kotlin
-kotlin = { strictly = "1.9.22" }
+kotlin = { strictly = "1.9.24" }
 ktor = "2.3.11"
 kotest = "5.9.0"
 shadow = "8.1.7"
